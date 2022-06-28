@@ -10,9 +10,17 @@ const handleHome = (req,res ) =>{
 const handleLogin = (req,res) =>{
     return res.send("login here")
 };
+const handleAbout = (req,res) =>{
+    return res.send("abputtt")
+};
+const handleContact = (req,res) =>{
+    return res.send("contTac")
+};
 app.get("/", handleHome);
 app.get("/login", handleLogin);
+app.get("/about", handleAbout);
+app.get("/contact", handleContact);
 
-const handleListening = () => console.log(`Server listenting on port http://localhost:${PORT}`);
+const handleListening = () => console.log(`Server listentidng on port http://localhost:${PORT}`);
 
 app.listen(PORT, handleListening);
